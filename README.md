@@ -1,2 +1,2 @@
 # occupational-safety-TFG
-This is my final degree project.
+This is the VR application for my final degree project.
