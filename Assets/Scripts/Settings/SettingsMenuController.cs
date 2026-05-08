@@ -10,7 +10,6 @@ public class SettingsMenuController : MonoBehaviour
 
     [Header("Toggles")]
     [SerializeField] private Toggle toggleStickMovement;
-    [SerializeField] private Toggle toggleCameraTunneling;
     [SerializeField] private Toggle toggleSmoothCameraMovement;
 
     private void OnEnable()
@@ -30,7 +29,6 @@ public class SettingsMenuController : MonoBehaviour
 
         // Toggles
         toggleStickMovement.SetIsOnWithoutNotify(s.stickMovement);
-        toggleCameraTunneling.SetIsOnWithoutNotify(s.cameraTunneling);
         toggleSmoothCameraMovement.SetIsOnWithoutNotify(s.smoothCameraMovement);
     }
 
@@ -59,12 +57,6 @@ public class SettingsMenuController : MonoBehaviour
     public void OnStickMovementChanged(bool value)
     {
         SettingsManager.Instance.Settings.stickMovement = value;
-        SettingsManager.Instance.Save();
-    }
-
-    public void OnCameraTunnelingChanged(bool value)
-    {
-        SettingsManager.Instance.Settings.cameraTunneling = value;
         SettingsManager.Instance.Save();
     }
 
