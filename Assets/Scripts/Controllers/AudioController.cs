@@ -25,18 +25,19 @@ public class AudioController : MonoBehaviour
             sfxSource.PlayOneShot(clip);
     }
 
-public void PlayMusic(AudioClip clip)
-{
-    if (clip != null)
+    public void PlayMusic(AudioClip clip)
     {
-        if (!musicSource.gameObject.activeInHierarchy)
-            musicSource.gameObject.SetActive(true);
+        if (clip != null)
+        {
+            if (!musicSource.gameObject.activeInHierarchy)
+                musicSource.gameObject.SetActive(true);
 
-        if (!musicSource.enabled)
-            musicSource.enabled = true;
+            if (!musicSource.enabled)
+                musicSource.enabled = true;
 
-        musicSource.clip = clip;
-        musicSource.Play();
+            musicSource.clip = clip;
+            musicSource.Play();
+        }
     }
-}
+
 }

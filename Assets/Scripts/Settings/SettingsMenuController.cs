@@ -38,18 +38,21 @@ public class SettingsMenuController : MonoBehaviour
     {
         SettingsManager.Instance.Settings.masterVolume = value;
         SettingsManager.Instance.Save();
+        SettingsManager.Instance.ApplySettings();
     }
 
     public void OnMusicVolumeChanged(float value)
     {
         SettingsManager.Instance.Settings.musicVolume = value;
         SettingsManager.Instance.Save();
+        SettingsManager.Instance.ApplySettings();
     }
 
     public void OnSFXVolumeChanged(float value)
     {
         SettingsManager.Instance.Settings.sfxVolume = value;
         SettingsManager.Instance.Save();
+        SettingsManager.Instance.ApplySettings();
     }
 
     // ── Toggles ──────────────────────────────────────────
