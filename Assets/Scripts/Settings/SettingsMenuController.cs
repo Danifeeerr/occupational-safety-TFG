@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class SettingsMenuController : MonoBehaviour
 {
+    [SerializeField] private SettingsApplier settingsApplier;
     [Header("Sliders de Volumen")]
     [SerializeField] private Slider sliderMasterVolume;
     [SerializeField] private Slider sliderMusicVolume;
@@ -61,12 +62,15 @@ public class SettingsMenuController : MonoBehaviour
     {
         SettingsManager.Instance.Settings.stickMovement = value;
         SettingsManager.Instance.Save();
+        if (settingsApplier != null) settingsApplier.ApplyAll();
+
     }
 
     public void OnSmoothCameraMovementChanged(bool value)
     {
         SettingsManager.Instance.Settings.smoothCameraMovement = value;
         SettingsManager.Instance.Save();
+        if (settingsApplier != null) settingsApplier.ApplyAll();
     }
 
     // ── Utilidades ───────────────────────────────────────

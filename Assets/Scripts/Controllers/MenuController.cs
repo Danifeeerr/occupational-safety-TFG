@@ -15,15 +15,15 @@ public class MenuController : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(ApiController.Instance.Token))
         {
-            loginMenu.SetActive(false);
-            mainMenu.SetActive(true);
-            optionMenu.SetActive(false);
+            if (loginMenu != null) loginMenu.SetActive(false);
+            if (mainMenu != null) mainMenu.SetActive(true);
+            if (optionMenu != null) optionMenu.SetActive(false);
         }
         else
         {
-            loginMenu.SetActive(true);
-            mainMenu.SetActive(false);
-            optionMenu.SetActive(false);
+            if (loginMenu != null) loginMenu.SetActive(true);
+            if (mainMenu != null) mainMenu.SetActive(false);
+            if (optionMenu != null) optionMenu.SetActive(false);
         }
     }
     public void login()
@@ -37,8 +37,8 @@ public class MenuController : MonoBehaviour
             {
                 if (success)
                 {
-                    loginMenu.SetActive(false);
-                    mainMenu.SetActive(true);
+                    if (loginMenu != null) loginMenu.SetActive(false);
+                    if (mainMenu != null) mainMenu.SetActive(true);
                 }
                 else
                 {
@@ -54,23 +54,28 @@ public class MenuController : MonoBehaviour
 
     public void OpenOptions()
     {
-        loginMenu.SetActive(false);
-        mainMenu.SetActive(false);
-        optionMenu.SetActive(true);
+        if (loginMenu != null) loginMenu.SetActive(false);
+        if (mainMenu != null) mainMenu.SetActive(false);
+        if (optionMenu != null) optionMenu.SetActive(true);
     }
 
     public void MainMenu()
     {
-        loginMenu.SetActive(false);
-        mainMenu.SetActive(true);
-        optionMenu.SetActive(false);
+        if (loginMenu != null) loginMenu.SetActive(false);
+        if (mainMenu != null) mainMenu.SetActive(true);
+        if (optionMenu != null) optionMenu.SetActive(false);
     }
 
     public void LogOut()
     {
         ApiController.Instance.LogOut();
-        mainMenu.SetActive(false);
-        optionMenu.SetActive(false);
-        loginMenu.SetActive(true);
+        if (mainMenu != null) mainMenu.SetActive(false);
+        if (optionMenu != null) optionMenu.SetActive(false);
+        if (loginMenu != null) loginMenu.SetActive(true);
+    }
+
+    public void activateDeactivateGameObject(GameObject obj)
+    {
+        obj.SetActive(!obj.activeSelf);
     }
 }

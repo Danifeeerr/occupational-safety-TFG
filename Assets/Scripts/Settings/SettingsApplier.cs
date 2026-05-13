@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class SettingsApplier : MonoBehaviour
 {
+    //Aquest script s'ha creat per a poder aplicar les settings del jugador a banda de les d'àudio
+    //ja que no es vol que s'apliquin els canvis de moviment al lobby, només a les escenes a on
+    //l'usuari es pot moure
     [SerializeField] private TurnerEventBroadcaster turnerEventBroadcaster;
     [SerializeField] private GameObject controllerSlideInteractor;
 
