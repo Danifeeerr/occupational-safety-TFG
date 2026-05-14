@@ -6,5 +6,6 @@ public class GameSettings
     public float sfxVolume      = 0.25f;
     public bool  stickMovement  = true;
     public bool smoothCameraMovement = false;
+    public string lang = "ca";
 }
 

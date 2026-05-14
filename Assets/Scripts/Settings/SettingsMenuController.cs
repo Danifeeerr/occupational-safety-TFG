@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,9 +15,19 @@ public class SettingsMenuController : MonoBehaviour
     [SerializeField] private Toggle toggleStickMovement;
     [SerializeField] private Toggle toggleSmoothCameraMovement;
 
+    [Header("Idioma")]
+    [SerializeField] private TMP_Dropdown dropdownLang;
+
+    private static readonly List<string> _langCodes = new() { "ca", "es", "en" };
+
     private void OnEnable()
     {
         // Cada vez que se abre el menú, carga los valores actuales
+        LoadValuesIntoUI();
+    }
+
+    private void Start()
+    {
         LoadValuesIntoUI();
     }
 
@@ -31,9 +43,12 @@ public class SettingsMenuController : MonoBehaviour
         // Toggles
         toggleStickMovement.SetIsOnWithoutNotify(s.stickMovement);
         toggleSmoothCameraMovement.SetIsOnWithoutNotify(s.smoothCameraMovement);
+
+        // Idioma
+        dropdownLang.SetValueWithoutNotify(_langCodes.IndexOf(s.lang));
     }
 
-    // ── Sliders ──────────────────────────────────────────
+    // Sliders
 
     public void OnMasterVolumeChanged(float value)
     {
@@ -56,14 +71,13 @@ public class SettingsMenuController : MonoBehaviour
         SettingsManager.Instance.ApplySettings();
     }
 
-    // ── Toggles ──────────────────────────────────────────
+    // Toggles
 
     public void OnStickMovementChanged(bool value)
     {
         SettingsManager.Instance.Settings.stickMovement = value;
         SettingsManager.Instance.Save();
         if (settingsApplier != null) settingsApplier.ApplyAll();
-
     }
 
     public void OnSmoothCameraMovementChanged(bool value)
@@ -73,7 +87,14 @@ public class SettingsMenuController : MonoBehaviour
         if (settingsApplier != null) settingsApplier.ApplyAll();
     }
 
-    // ── Utilidades ───────────────────────────────────────
+    // Idioma
+
+    public void OnLangChanged(int index)
+    {
+        Translations.SetLang(_langCodes[index]);
+    }
+
+    // Utilidades
 
     public void ResetToDefaults()
     {
