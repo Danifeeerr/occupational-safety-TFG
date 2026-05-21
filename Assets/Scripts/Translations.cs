@@ -33,6 +33,22 @@ public static class Translations
             ["resume_button"] = "Continuar",
             ["go_lobby_button"] ="Lobby",
 
+            ////////////////////////Targetes////////////////////////
+            ["next_card"] = "Seguent",
+            ["prevoius_card"] = "Enrere",
+            ["close_card"] = "Tancar",
+            ///TutorialIntroduction///
+            ["tut_int_1"] = "Benvingut al tutorial del sistema d'entrenament per PRL! En aquesta sala podras trobar diverses formes d'aprendre a utilitzar els controls en Realitat Virtual com agafar objectes, accionar botons i palanques o colocar objectes així com moure't!",
+            ["tut_int_2"] = "Més endevant hi han tres sales amb un contingut diferent cadascuna. A la sala número 1 aprendràs a accioanr palanques i botons, a la 2 a col·locar objectes i a la 3 podràs repasar els controls tant de moviment com d'interacció.",
+            ["tut_int_3"] = "Primer pots provar a interactuar amb els objectes que hi han a la taula amb els gallets inferiors dels teus controladors. Prova a agafar els objectes, girar-los, llençar-los... Familiaritza't amb l'interacció en Realitat Virtual!",
+            
+            ["room1_intr"] = "En aquesta sala podràs provar a accionar diversos botones i palanques. Aquests mecanismes poden ser accionats passant la ma com si ho fessis a la vida real! Prova a apropar la ma als botons i palanques i veuras com reaccionen!",
+            ["room2_intr1"] = "En aquesta sala podràs aprendre com s'han de col·locar els diferents objectes dins dels seus llocs. Veuràs que hi han objectes opacs i d'altres transparents. Pots interactuar amb els que són opacs i els transparents són els llocs a on els has de posar.",
+            ["room2_intr2"] = "Quan col·loquis un objecte dins del seu espai, hauràs de comprovar que el teu controlador vibra. Si es així, vol dir que el sistema reconeix que l'has posat correctament i llavors el pots deixar anar, i veuràs com l'bjecte es recoloca sol!",
+            ["room3_intr"] = "En aquesta sala podràs repasar els diferents controls als que pots accedir en aquesta experiència. Si tens cap problema amb els teus controladors o el teu visor de Realitat Virtual, contacta amb els serveis d'IT i t'ajudaran el més ràpid possible!",
+    
+
+
         },
         ["es"] = new Dictionary<string, string>
         {
@@ -49,7 +65,7 @@ public static class Translations
             ["main_options_button"] = "Opciones",
             ["log_out_button"] = "Cerrar sesión",
 
-            //Menu opcions lobby
+            //Menu opciones lobby
             ["options_title"] = "Opciones",
             ["master_volume_lbl"] = "Volumen general",
             ["music_volume_lbl"] = "Volumen música",
@@ -60,23 +76,38 @@ public static class Translations
 
             ["resume_button"] = "Continuar",
             ["go_lobby_button"] ="Lobby",
+
+            ////////////////////////Tarjetas////////////////////////
+            ["next_card"] = "Siguiente",
+            ["prevoius_card"] = "Atrás",
+            ["close_card"] = "Cerrar",
+            ///TutorialIntroduction///
+            ["tut_int_1"] = "Bienvenido al tutorial del sistema de entrenamiento para PRL! En esta sala podras encontrar varias formas de aprender a utilizar los controles en Realidad Virtual como coger objectos, accionar botones y palancas o colocar objetos así como moverte!",
+            ["tut_int_2"] = "Mas adelante hay tres salas con un contenido diferente cada una. En la sala 1 aprenderás a accionar palancas y botones, en la 2 a colocar objetos y en la 3 podrás repasar los controles tanto de movimiento como de interacción.",
+            ["tut_int_3"] = "Primero puedes probar a interactuar con los objetos que tienes en la mesa con los gatillos inferiores de tus mandos. Prueba a coger los objetos, girarlos, lanzarlos... Familiarizate con la interacción en Realidad Virtual!",
+
+            ["room1_intr"] = "En esta sala podrás probar a accionar diversos botones y palancas. Estos mecanismos pueden ser accionados pasando la mano como si lo hicieras en la vida real! Prueba a acercar la mano a los botones y palancas y verás como reaccionan!",
+            ["room2_intr1"] = "En esta sala podrás aprender cómo se deben colocar los diferentes objetos en sus lugares. Verás que hay objetos opacos y otros transparentes. Puedes interactuar con los que son opacos y los transparentes son los lugares donde los debes colocar.",
+            ["room2_intr2"] = "Cuando coloques un objeto dentro de su espacio, deberás comprobar que tu mando vibra. Si es así, significa que el sistema reconoce que lo has colocado correctamente y entonces puedes soltarlo, y verás como el objeto se recoloca solo!",
+            ["room3_intr"] = "En esta sala podrás repasar los diferentes controles a los que puedes acceder en esta experiencia. Si tienes algún problema con tus mandos o tu visor de Realidad Virtual, contacta con los servicios de IT y te ayudarán lo más rápido posible!",
+
         },
         ["en"] = new Dictionary<string, string>
         {
-            //Menu de login
+            //Login menu
             ["login_title"] = "Log in",
             ["username_placeholder"] = "Username",
             ["pass_placeholder"] = "Password",
             ["login_button"] = "Enter",
 
-            //Menu principal
+            //Main menu
             ["main_menu_title"] = "VR OHS Training",
             ["tutorial_button"] = "Tutorial",
             ["start_training_button"] = "Training",
             ["main_options_button"] = "Options",
             ["log_out_button"] = "Log out",
 
-            //Menu opcions lobby
+            //Options lobby menu
             ["options_title"] = "Options",
             ["master_volume_lbl"] = "Master volume",
             ["music_volume_lbl"] = "Music volume",
@@ -87,12 +118,27 @@ public static class Translations
 
             ["resume_button"] = "Resume",
             ["go_lobby_button"] ="Lobby",
+
+            ////////////////////////Text cards////////////////////////
+            ["next_card"] = "Next",
+            ["prevoius_card"] = "Back",
+            ["close_card"] = "Close",
+            ///TutorialIntroduction///
+            ["tut_int_1"] = "Welcome to the OHS training system tutorial! Here you can find some ways of learning how to use your Virtual Reality Controls for grabbing objects, pressing buttons and operating levers or placing objects as well as moving around!",
+            ["tut_int_2"] = "Further ahead you will find three rooms with different contents. In the room number 1 you will learn to operate buttons and levers, in the 2nd you will learn to place objects and in the 3rd one you can review movement and interaction controls.",
+            ["tut_int_3"] = "First, you can try interacting with the table objects with your controller's bottom triggers. Try grabbing those objects, turning them, throwing them... Get familiar with the Virtual Reality interactions!",
+
+            ["room1_intr"] = "In this room you will be able to try operating various buttons and levers. These mechanisms can be activated by passing your hand as if you were doing it in real life! Try bringing your hand close to the buttons and levers and you will see how they react!",
+            ["room2_intr1"] = "In this room you will learn how to place the different objects in their spots. You will notice that some objects are opaque and others are transparent. You can interact with the opaque ones and the transparent ones are the spots where you need to place them.",
+            ["room2_intr2"] = "When you place an object inside its space, you should check that your controller vibrates. If it does, it means the system recognizes that you have placed it correctly and then you can let it go, and you will see how the object repositions itself!",
+            ["room3_intr"] = "In this room you will be able to review the different controls you can access in this experience. If you have any issues with your controllers or your Virtual Reality headset, contact IT services and they will help you as soon as possible!",
+
         },
     };
 
     public static string Get(string key)
     {
-        string lang = SettingsManager.Instance.Settings.lang;
+        string lang = SettingsManager.Instance != null ? SettingsManager.Instance.Settings.lang : "ca";
         if (_STRINGS.TryGetValue(lang, out var dict) && dict.TryGetValue(key, out var value))
             return value;
         if (_STRINGS["ca"].TryGetValue(key, out var fallback))

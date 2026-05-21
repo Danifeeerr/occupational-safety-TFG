@@ -13,7 +13,7 @@ public class MenuController : MonoBehaviour
 
     private void Awake()
     {
-        if (!string.IsNullOrEmpty(ApiController.Instance.Token))
+        if (ApiController.Instance != null && !string.IsNullOrEmpty(ApiController.Instance.Token))
         {
             if (loginMenu != null) loginMenu.SetActive(false);
             if (mainMenu != null) mainMenu.SetActive(true);
