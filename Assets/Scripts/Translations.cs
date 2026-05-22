@@ -46,6 +46,8 @@ public static class Translations
             ["room2_intr1"] = "En aquesta sala podràs aprendre com s'han de col·locar els diferents objectes dins dels seus llocs. Veuràs que hi han objectes opacs i d'altres transparents. Pots interactuar amb els que són opacs i els transparents són els llocs a on els has de posar.",
             ["room2_intr2"] = "Quan col·loquis un objecte dins del seu espai, hauràs de comprovar que el teu controlador vibra. Si es així, vol dir que el sistema reconeix que l'has posat correctament i llavors el pots deixar anar, i veuràs com l'bjecte es recoloca sol!",
             ["room3_intr"] = "En aquesta sala podràs repasar els diferents controls als que pots accedir en aquesta experiència. Si tens cap problema amb els teus controladors o el teu visor de Realitat Virtual, contacta amb els serveis d'IT i t'ajudaran el més ràpid possible!",
+
+            ["room1_tips"] = "Recorda, si els teus controladors no vibren, vol dir que encara no has aconseguit posar la peça en la posició correcta, segueix girant la peça dins de la zona transparent fins que sentis la vibració i llavors podràs deixar-la anar!",
     
 
 
@@ -91,6 +93,9 @@ public static class Translations
             ["room2_intr2"] = "Cuando coloques un objeto dentro de su espacio, deberás comprobar que tu mando vibra. Si es así, significa que el sistema reconoce que lo has colocado correctamente y entonces puedes soltarlo, y verás como el objeto se recoloca solo!",
             ["room3_intr"] = "En esta sala podrás repasar los diferentes controles a los que puedes acceder en esta experiencia. Si tienes algún problema con tus mandos o tu visor de Realidad Virtual, contacta con los servicios de IT y te ayudarán lo más rápido posible!",
 
+            ["room1_tips"] = "Recuerda, si tus mandos no vibran, quiere decir que todavía no has conseguido poner la pieza en la posición correcta. Sigue girandola dentro de la zona transparente hasta que sientas la vibración y entonces podrás dejarla!",
+
+
         },
         ["en"] = new Dictionary<string, string>
         {
@@ -132,6 +137,8 @@ public static class Translations
             ["room2_intr1"] = "In this room you will learn how to place the different objects in their spots. You will notice that some objects are opaque and others are transparent. You can interact with the opaque ones and the transparent ones are the spots where you need to place them.",
             ["room2_intr2"] = "When you place an object inside its space, you should check that your controller vibrates. If it does, it means the system recognizes that you have placed it correctly and then you can let it go, and you will see how the object repositions itself!",
             ["room3_intr"] = "In this room you will be able to review the different controls you can access in this experience. If you have any issues with your controllers or your Virtual Reality headset, contact IT services and they will help you as soon as possible!",
+
+            ["room1_tips"] = "Remember, if your controllers are not vibrating, that means you have not placed the piece in the correct position. Keep rotating it inside the transparent zone until you feel the vibration and then you can let it go!",
 
         },
     };

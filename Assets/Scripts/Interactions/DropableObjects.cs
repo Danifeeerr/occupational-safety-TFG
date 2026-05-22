@@ -25,9 +25,11 @@ public class DropableObject : MonoBehaviour
 
     public void SetPosition(Transform target)
     {
-        _target = target;
-        _rb.isKinematic = true;
         SetGrabEnabled(false);
+        _rb.linearVelocity = Vector3.zero;
+        _rb.angularVelocity = Vector3.zero;
+        _rb.isKinematic = true;
+        _target = target;
     }
 
     public void EnableGrab()
