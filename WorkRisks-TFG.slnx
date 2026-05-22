@@ -62,7 +62,6 @@
   <Project Path="Meta.XR.Editor.BuildingBlocks.AIBlocks.csproj" />
   <Project Path="Meta.XR.Editor.ToolingSupport.csproj" />
   <Project Path="Oculus.Interaction.OVR.Samples.csproj" />
-  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="VoiceSDK.Dictation.Runtime.csproj" />
   <Project Path="Meta.XR.Editor.PlayCompanion.csproj" />
   <Project Path="Unity.Postprocessing.Runtime.csproj" />
@@ -107,6 +106,7 @@
   <Project Path="Meta.XR.BuildingBlocks.DepthAPI.csproj" />
   <Project Path="Unity.VisualScripting.Shared.Editor.csproj" />
   <Project Path="Meta.WitAi.TTS.Editor.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Oculus.Platform.Editor.csproj" />
   <Project Path="Meta.XR.EnvironmentDepth.Editor.csproj" />
   <Project Path="Oculus.Interaction.Samples.Editor.UISet.csproj" />
