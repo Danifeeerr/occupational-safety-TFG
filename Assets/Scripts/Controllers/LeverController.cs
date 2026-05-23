@@ -4,6 +4,7 @@ public class LeverController : MonoBehaviour
 {
     public UnityEngine.Events.UnityEvent onLeverPulled;
     private bool _isPulled = false;
+    public bool rotateX;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -11,7 +12,8 @@ public class LeverController : MonoBehaviour
         if (!HasTagInParents(other.transform, "hand")) return;
 
         _isPulled = true;
-        transform.Rotate(90f, 0f, 0f);
+        if (rotateX) transform.Rotate(-90f, 0f, 0f);
+        else transform.Rotate(0f, 0f, -90f);
         onLeverPulled.Invoke();
     }
 
