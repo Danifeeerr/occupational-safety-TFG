@@ -7,7 +7,7 @@ public class ApiController : MonoBehaviour
 {
     public static ApiController Instance { get; private set; }
 
-    private const string BASE_URL = "http://10.244.217.1:8000";
+    private const string BASE_URL = "http://10.244.217.1:8000"; //only works with the VPN on
 
     public string Token { get; private set; }
 
