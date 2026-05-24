@@ -1,0 +1,104 @@
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class SettingsMenuController : MonoBehaviour
+{
+    [SerializeField] private SettingsApplier settingsApplier;
+    [Header("Sliders de Volumen")]
+    [SerializeField] private Slider sliderMasterVolume;
+    [SerializeField] private Slider sliderMusicVolume;
+    [SerializeField] private Slider sliderSFXVolume;
+
+    [Header("Toggles")]
+    [SerializeField] private Toggle toggleStickMovement;
+    [SerializeField] private Toggle toggleSmoothCameraMovement;
+
+    [Header("Idioma")]
+    [SerializeField] private TMP_Dropdown dropdownLang;
+
+    private static readonly List<string> _langCodes = new() { "ca", "es", "en" };
+
+    private void OnEnable()
+    {
+        // Cada vez que se abre el menú, carga los valores actuales
+        LoadValuesIntoUI();
+    }
+
+    private void Start()
+    {
+        LoadValuesIntoUI();
+    }
+
+    private void LoadValuesIntoUI()
+    {
+        var s = SettingsManager.Instance.Settings;
+
+        // Sliders
+        sliderMasterVolume.SetValueWithoutNotify(s.masterVolume);
+        sliderMusicVolume.SetValueWithoutNotify(s.musicVolume);
+        sliderSFXVolume.SetValueWithoutNotify(s.sfxVolume);
+
+        // Toggles
+        toggleStickMovement.SetIsOnWithoutNotify(s.stickMovement);
+        toggleSmoothCameraMovement.SetIsOnWithoutNotify(s.smoothCameraMovement);
+
+        // Idioma
+        dropdownLang.SetValueWithoutNotify(_langCodes.IndexOf(s.lang));
+    }
+
+    // Sliders
+
+    public void OnMasterVolumeChanged(float value)
+    {
+        SettingsManager.Instance.Settings.masterVolume = value;
+        SettingsManager.Instance.Save();
+        SettingsManager.Instance.ApplySettings();
+    }
+
+    public void OnMusicVolumeChanged(float value)
+    {
+        SettingsManager.Instance.Settings.musicVolume = value;
+        SettingsManager.Instance.Save();
+        SettingsManager.Instance.ApplySettings();
+    }
+
+    public void OnSFXVolumeChanged(float value)
+    {
+        SettingsManager.Instance.Settings.sfxVolume = value;
+        SettingsManager.Instance.Save();
+        SettingsManager.Instance.ApplySettings();
+    }
+
+    // Toggles
+
+    public void OnStickMovementChanged(bool value)
+    {
+        SettingsManager.Instance.Settings.stickMovement = value;
+        SettingsManager.Instance.Save();
+        if (settingsApplier != null) settingsApplier.ApplyAll();
+    }
+
+    public void OnSmoothCameraMovementChanged(bool value)
+    {
+        SettingsManager.Instance.Settings.smoothCameraMovement = value;
+        SettingsManager.Instance.Save();
+        if (settingsApplier != null) settingsApplier.ApplyAll();
+    }
+
+    // Idioma
+
+    public void OnLangChanged(int index)
+    {
+        Translations.SetLang(_langCodes[index]);
+    }
+
+    // Utilidades
+
+    public void ResetToDefaults()
+    {
+        SettingsManager.Instance.ResetToDefaults();
+        LoadValuesIntoUI();
+    }
+}
