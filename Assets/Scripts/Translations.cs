@@ -52,6 +52,13 @@ public static class Translations
             ["room2_lever1"] = "¡Has accionat la palanca!",
             
             ["room3_tut1"] = "Per moure el teu avatar digital simulant que estàs caminant, acciona la palanqueta del teu controlador esquerre. Aquest tipus de moviment pot ser deshabilitat des del menú d'opcions.",
+            ["room3_tut2"] = "Per teletransportar-te per l'espai virtual, acciona la palanca dreta cap endevant, apunta a on vols apréixer i deixa anar la palanqueta. Apareixeràs a on has apuntat al instant!",
+            ["room3_tut3"] = "Per obrir el menú d'opcions has d'apretar el botó de menú del teu controlador esquerre. T'apareixerà un menú sobre la mà esquerra que podràs controlar amb la ma dreta!",
+            ["room3_tut4"] = "Pots girar la càmera tant movent el cap físicament com accionant la palanqueta del teu controlador dret cap a l'esquerra i la dreta. Des del menú d'opcions pots fer que el moviment amb palanqueta sigui per cops per no marejar-te.",
+            ["room3_tut5"] = "Per agafar objectes de l'escenari virtual has d'apretar els gatells inferiors dels teus controladors. Posa el controlador dins de l'objecte que vols agafar i presiona els gatells, veuràs que fàcil!",
+            ["room3_tut6"] = "Pots agafar objectes a distància si apuntes cap a ells amb el teu controlador i l'agafes amb els gatells inferiors. Has d'apuntar amb la punta mes llunyana a la teva ma del controlador.",
+
+
 
     
 
@@ -103,6 +110,12 @@ public static class Translations
             ["room2_lever1"] = "¡Has accionado la palanca!",
 
             ["room3_tut1"] = "Para mover tu avatar digital simulando que estas caminando, acciona la palanca de tu mando izquierdo. Este tipo de movimiento puede ser deshabilitado des del menú de opciones.",
+            ["room3_tut2"] = "Para teletransportarte por el espacio virtual, acciona la palanca derecha hacia delante, apunta donde quieres aparecer y deja la palanca. Aparecerás en el lugar al que has apuntado al instante!",
+            ["room3_tut3"] = "Para abrir el menú de opciones, presiona el botón de menú de tu mando izquierdo. Te aparecerá un menú sobre la mano izquierda que podrás controlar apuntando con la mano derecha.",
+            ["room3_tut4"] = "Puedes girar la cámara tanto moviendo la cabeza físicamente como accionando la palanca de tu mando derecgo hacia la izquierda y la derecha. Des del menú de opciones puedes hacer que el movimiento con palanca sea por golpecitos para no marearte.",
+            ["room3_tut5"] = "Para agarrar objetos del escenario virtual tienes que presionar los gatillos inferiores de tus mandos. Pon el controlador en el objeto que quieres agarrar i presiona el gatillo, ¡verás que fácil!",
+            ["room3_tut6"] = "Puedes agarrar objetos a distancia si apuntas hacia ellos con tu mando y presionas el gatillo inferior. Tienes que apuntar con la punta mas lejana de tu mano al mando.",
+            
 
 
             
@@ -157,6 +170,13 @@ public static class Translations
             ["room2_lever1"] = "You pulled the lever!",
 
             ["room3_tut1"] = "To move your digital avatar as if you were walking, moev your left controller's joystick. This type of movement can be disabled from you options menu.",
+            ["room3_tut2"] = "To teleport through the virtual environment, move your right's controller joystick forward, point towards wherever you want to appear and let the jostick go. You will appear there at the moment!",
+            ["room3_tut3"] = "To open the options menu, press the menu button in your left controller. A floating menú will appear over your left hand and you will be able to interact with it with your right hand.",
+            ["room3_tut4"] = "You can turn your camera moving your head and moving your right controller's joystick from left to right. In the options menu you can change the joystick movement to be less smooth so that you don't get sick.",
+            ["room3_tut5"] = "To grab objects in the virtual world you must press the bottom triggers in your controller. Put your controller in the object you want to grab and press the trigger, as easy as that!",
+            ["room3_tut6"] = "You can grab objects from a distance if you point at them and press the trigger. You must point them with the farest point of the controller to your hand.",
+            
+
 
         },
     };
