@@ -1,19 +1,38 @@
 using UnityEngine;
+using System.Collections;
 
 public class LeverController : MonoBehaviour
 {
     public UnityEngine.Events.UnityEvent onLeverPulled;
     private bool _isPulled = false;
     public bool rotateX;
+    [SerializeField] private float rotationDuration = 0.3f;
 
     private void OnTriggerEnter(Collider other)
     {
         if (_isPulled) return;
         if (!HasTagInParents(other.transform, "hand")) return;
-
         _isPulled = true;
-        if (rotateX) transform.Rotate(-90f, 0f, 0f);
-        else transform.Rotate(0f, 0f, -90f);
+        Vector3 targetRotation = rotateX ? new Vector3(-90f, 0f, 0f) : new Vector3(0f, 0f, -90f);
+        StartCoroutine(RotateLever(targetRotation));
+    }
+
+    private IEnumerator RotateLever(Vector3 deltaRotation)
+    {
+        Quaternion startRot = transform.localRotation;
+        Quaternion endRot = startRot * Quaternion.Euler(deltaRotation);
+        float elapsed = 0f;
+
+        while (elapsed < rotationDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / rotationDuration;
+            t = Mathf.SmoothStep(0f, 1f, t); 
+            transform.localRotation = Quaternion.Lerp(startRot, endRot, t);
+            yield return null;
+        }
+
+        transform.localRotation = endRot;
         onLeverPulled.Invoke();
     }
 
