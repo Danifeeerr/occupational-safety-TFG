@@ -40,7 +40,7 @@ public static class Translations
             ///TutorialIntroduction///
             ["tut_int_1"] = "Benvingut al tutorial del sistema d'entrenament per PRL! En aquesta sala podras trobar diverses formes d'aprendre a utilitzar els controls en Realitat Virtual com agafar objectes, accionar botons i palanques o colocar objectes així com moure't!",
             ["tut_int_2"] = "Davant teu hi han tres sales amb un contingut diferent cadascuna. A la sala número 1 aprendràs a accioanr palanques i botons, a la 2 a col·locar objectes i a la 3 podràs repasar els controls tant de moviment com d'interacció.",
-            ["tut_int_3"] = "Primer pots provar a interactuar amb els objectes que hi han a la taula amb els gallets inferiors dels teus controladors. Prova a agafar els objectes, girar-los, llençar-los... Familiaritza't amb l'interacció en Realitat Virtual!",
+            ["tut_int_3"] = "Primer pots provar a apropar-te amb la palanqueta esquerra i interactuar amb els objectes que hi han a la taula amb els gallets inferiors dels teus controladors. Prova a agafar els objectes, girar-los, llençar-los... Familiaritza't amb l'interacció en Realitat Virtual!",
             ["tut_int_4"] = "Si en algun moment no pots girar la càmera o no pots moure't amb les palanquetes, probablement estiguis apuntant a una de les capses de text. Deixa d'apuntar i torna a probar!",
             
             ["room1_intr1"] = "En aquesta sala podràs aprendre com s'han de col·locar els diferents objectes dins dels seus llocs. Veuràs que hi han objectes opacs i d'altres transparents. Pots interactuar amb els que són opacs i els transparents són els llocs a on els has de posar.",
@@ -99,7 +99,7 @@ public static class Translations
             ///TutorialIntroduction///
             ["tut_int_1"] = "Bienvenido al tutorial del sistema de entrenamiento para PRL! En esta sala podras encontrar varias formas de aprender a utilizar los controles en Realidad Virtual como coger objectos, accionar botones y palancas o colocar objetos así como moverte!",
             ["tut_int_2"] = "Delante de ti hay tres salas con un contenido diferente cada una. En la sala 1 aprenderás a accionar palancas y botones, en la 2 a colocar objetos y en la 3 podrás repasar los controles tanto de movimiento como de interacción.",
-            ["tut_int_3"] = "Primero puedes probar a interactuar con los objetos que tienes en la mesa con los gatillos inferiores de tus mandos. Prueba a coger los objetos, girarlos, lanzarlos... Familiarizate con la interacción en Realidad Virtual!",
+            ["tut_int_3"] = "Primero puedes probar a acercarte con la palanca izquierda y interactuar con los objetos que tienes en la mesa con los gatillos inferiores de tus mandos. Prueba a coger los objetos, girarlos, lanzarlos... Familiarizate con la interacción en Realidad Virtual!",
             ["tut_int_4"] = "Si en algun momento no puedes girar la cámara o moverte con las palancas, probablemente estés apuntando a una caja de texto. ¡Deja de apuntarla y vuelve a probar!",
 
 
@@ -160,7 +160,7 @@ public static class Translations
             ///TutorialIntroduction///
             ["tut_int_1"] = "Welcome to the OHS training system tutorial! Here you can find some ways of learning how to use your Virtual Reality Controls for grabbing objects, pressing buttons and operating levers or placing objects as well as moving around!",
             ["tut_int_2"] = "In front of you, you will find three rooms with different contents. In the room number 1 you will learn to operate buttons and levers, in the 2nd you will learn to place objects and in the 3rd one you can review movement and interaction controls.",
-            ["tut_int_3"] = "First, you can try interacting with the table objects with your controller's bottom triggers. Try grabbing those objects, turning them, throwing them... Get familiar with the Virtual Reality interactions!",
+            ["tut_int_3"] = "First, you can try approaching the table with the left joystick and interacting with the table objects with your controller's bottom triggers. Try grabbing those objects, turning them, throwing them... Get familiar with the Virtual Reality interactions!",
             ["tut_int_4"] = "If you can not move your camera or your own body with your joysticks, you are probably pointing at one of the text boxes. Stop pointing at it and try again!",
 
 

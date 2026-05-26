@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using Oculus.Interaction;
 using Oculus.Interaction.HandGrab;
 
@@ -9,7 +10,7 @@ public class DropableObject : MonoBehaviour
 
     private Vector3 _initPos;
     private Quaternion _initRot;
-    private Transform _target;
+
     private Rigidbody _rb;
     private Grabbable _grabbable;
 
@@ -29,7 +30,20 @@ public class DropableObject : MonoBehaviour
         _rb.linearVelocity = Vector3.zero;
         _rb.angularVelocity = Vector3.zero;
         _rb.isKinematic = true;
-        _target = target;
+        StartCoroutine(MoveToTarget(target));
+    }
+
+    private IEnumerator MoveToTarget(Transform target)
+    {
+        while (Vector3.Distance(transform.position, target.position) > 0.005f)
+        {
+            transform.SetPositionAndRotation(
+                Vector3.Lerp(transform.position, target.position, Time.deltaTime * 10f),
+                Quaternion.Slerp(transform.rotation, target.rotation, Time.deltaTime * 10f)
+            );
+            yield return null;
+        }
+        transform.SetPositionAndRotation(target.position, target.rotation);
     }
 
     public void EnableGrab()
@@ -41,7 +55,7 @@ public class DropableObject : MonoBehaviour
 
     public void ReturnToInitPos()
     {
-        _target = null;
+        StopAllCoroutines();
         transform.SetParent(null);
         transform.SetPositionAndRotation(_initPos, _initRot);
         _rb.isKinematic = false;
@@ -61,17 +75,5 @@ public class DropableObject : MonoBehaviour
             g.enabled = value;
     }
 
-    void Update()
-    {
-        if (_target == null) return;
-        transform.SetPositionAndRotation(
-            Vector3.Lerp(transform.position, _target.position, Time.deltaTime * 10f),
-            Quaternion.Slerp(transform.rotation, _target.rotation, Time.deltaTime * 10f)
-        );
-        if (Vector3.Distance(transform.position, _target.position) < 0.005f)
-        {
-            transform.SetPositionAndRotation(_target.position, _target.rotation);
-            _target = null;
-        }
-    }
+
 }
