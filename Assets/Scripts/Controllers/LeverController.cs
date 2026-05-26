@@ -7,13 +7,14 @@ public class LeverController : MonoBehaviour
     private bool _isPulled = false;
     public bool rotateX;
     [SerializeField] private float rotationDuration = 0.3f;
+    [SerializeField] private float rotationDegrees = 90f;
 
     private void OnTriggerEnter(Collider other)
     {
         if (_isPulled) return;
         if (!HasTagInParents(other.transform, "hand")) return;
         _isPulled = true;
-        Vector3 targetRotation = rotateX ? new Vector3(-90f, 0f, 0f) : new Vector3(0f, 0f, -90f);
+        Vector3 targetRotation = rotateX ? new Vector3(-rotationDegrees, 0f, 0f) : new Vector3(0f, 0f, -rotationDegrees);
         StartCoroutine(RotateLever(targetRotation));
     }
 
