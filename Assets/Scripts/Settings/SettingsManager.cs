@@ -48,6 +48,7 @@ public class SettingsManager : MonoBehaviour
     {
         string json = JsonUtility.ToJson(Settings, prettyPrint: true);
         File.WriteAllText(_savePath, json);
+        Debug.Log($"[Settings] Guardado en: {_savePath}");
     }
 
     public void Load()
@@ -56,10 +57,12 @@ public class SettingsManager : MonoBehaviour
         {
             string json = File.ReadAllText(_savePath);
             Settings = JsonUtility.FromJson<GameSettings>(json);
+            Debug.Log("[Settings] Cargado correctamente.");
         }
         else
         {
             Settings = new GameSettings();
+            Debug.Log("[Settings] No existe archivo, usando valores por defecto.");
         }
     }
 
