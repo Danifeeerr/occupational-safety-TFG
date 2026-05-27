@@ -20,8 +20,6 @@ public class TextController : MonoBehaviour
     {
         Translations.OnLanguageChanged += Refresh;
         Refresh();
-        Debug.Log("Refresh performed");
-
     }
 
     void OnDisable()
