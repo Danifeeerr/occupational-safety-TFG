@@ -270,6 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: start_training_button
+  keys: []
 --- !u!1 &66921218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8642537477760321812, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
@@ -763,6 +764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: joystick_mvm_label
+  keys: []
 --- !u!114 &147892347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1951,6 +1953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: log_out_button
+  keys: []
 --- !u!1 &317545969
 GameObject:
   m_ObjectHideFlags: 0
@@ -3557,6 +3560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: return_button
+  keys: []
 --- !u!1 &651876144
 GameObject:
   m_ObjectHideFlags: 0
@@ -4389,6 +4393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: pass_placeholder
+  keys: []
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -4892,6 +4897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: username_placeholder
+  keys: []
 --- !u!1 &888839008
 GameObject:
   m_ObjectHideFlags: 0
@@ -5043,6 +5049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: login_title
+  keys: []
 --- !u!1 &890876377
 GameObject:
   m_ObjectHideFlags: 0
@@ -6199,6 +6206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: smooth_cam_label
+  keys: []
 --- !u!1 &1030297459
 GameObject:
   m_ObjectHideFlags: 0
@@ -6759,6 +6767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: master_volume_lbl
+  keys: []
 --- !u!1 &1117270185
 GameObject:
   m_ObjectHideFlags: 0
@@ -7233,6 +7242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: options_title
+  keys: []
 --- !u!1 &1135699951
 GameObject:
   m_ObjectHideFlags: 0
@@ -7824,6 +7834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: login_button
+  keys: []
 --- !u!1 &1359950448
 GameObject:
   m_ObjectHideFlags: 0
@@ -8632,6 +8643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: main_menu_title
+  keys: []
 --- !u!1 &1503665294
 GameObject:
   m_ObjectHideFlags: 0
@@ -8783,6 +8795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: music_volume_lbl
+  keys: []
 --- !u!1 &1521892323
 GameObject:
   m_ObjectHideFlags: 0
@@ -9045,6 +9058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: tutorial_button
+  keys: []
 --- !u!1 &1594336942
 GameObject:
   m_ObjectHideFlags: 0
@@ -9232,6 +9246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: main_options_button
+  keys: []
 --- !u!1 &1660736727
 GameObject:
   m_ObjectHideFlags: 0
@@ -9750,6 +9765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextController
   key: sfx_volume_lbl
+  keys: []
 --- !u!1 &1696000402
 GameObject:
   m_ObjectHideFlags: 0
@@ -11219,7 +11235,7 @@ Transform:
   m_GameObject: {fileID: 2056091906}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.941, z: 0}
+  m_LocalPosition: {x: 0, y: -0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

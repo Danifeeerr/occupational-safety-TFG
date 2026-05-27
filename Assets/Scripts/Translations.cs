@@ -14,7 +14,7 @@ public static class Translations
             ["pass_placeholder"] = "Contrasenya",
             ["login_button"] = "Entrar",
 
-            //Menu principal 
+            //Menu principal
             ["main_menu_title"] = "Entrenament PRL en RV",
             ["tutorial_button"] = "Tutorial",
             ["start_training_button"] = "Entrenament",
@@ -42,7 +42,7 @@ public static class Translations
             ["tut_int_2"] = "Davant teu hi han tres sales amb un contingut diferent cadascuna. A la sala número 1 aprendràs a accioanr palanques i botons, a la 2 a col·locar objectes i a la 3 podràs repasar els controls tant de moviment com d'interacció.",
             ["tut_int_3"] = "Primer pots provar a apropar-te amb la palanqueta esquerra i interactuar amb els objectes que hi han a la taula amb els gallets inferiors dels teus controladors. Prova a agafar els objectes, girar-los, llençar-los... Familiaritza't amb l'interacció en Realitat Virtual!",
             ["tut_int_4"] = "Si en algun moment no pots girar la càmera o no pots moure't amb les palanquetes, probablement estiguis apuntant a una de les capses de text. Deixa d'apuntar i torna a probar!",
-            
+
             ["room1_intr1"] = "En aquesta sala podràs aprendre com s'han de col·locar els diferents objectes dins dels seus llocs. Veuràs que hi han objectes opacs i d'altres transparents. Pots interactuar amb els que són opacs i els transparents són els llocs a on els has de posar.",
             ["room1_intr2"] = "Quan col·loquis un objecte dins del seu espai, hauràs de comprovar que el teu controlador vibra. Si es així, vol dir que el sistema reconeix que l'has posat correctament i llavors el pots deixar anar, i veuràs com l'bjecte es recoloca sol!",
             ["room2_intr"] = "En aquesta sala podràs provar a accionar diversos botons i palanques. Aquests mecanismes poden ser accionats passant la ma com si ho fessis a la vida real! Prova a apropar la ma als botons i palanques i veuras com reaccionen!",
@@ -51,7 +51,7 @@ public static class Translations
             ["room1_tips"] = "Recorda, si els teus controladors no vibren, vol dir que encara no has aconseguit posar la peça en la posició correcta, segueix girant la peça dins de la zona transparent fins que sentis la vibració i llavors podràs deixar-la anar! Veuràs que per l'esfera i el cilindre és especialment útil.",
             ["room2_button1"] = "Has apretat el botó!",
             ["room2_lever1"] = "¡Has accionat la palanca!",
-            
+
             ["room3_tut1"] = "Per moure el teu avatar digital simulant que estàs caminant, acciona la palanqueta del teu controlador esquerre. Aquest tipus de moviment pot ser deshabilitat des del menú d'opcions.",
             ["room3_tut2"] = "Per teletransportar-te per l'espai virtual, acciona la palanca dreta cap endevant, apunta a on vols apréixer i deixa anar la palanqueta. Apareixeràs a on has apuntat al instant!",
             ["room3_tut3"] = "Per obrir el menú d'opcions has d'apretar el botó de menú del teu controlador esquerre. T'apareixerà un menú sobre la mà esquerra que podràs controlar amb la ma dreta!",
@@ -59,10 +59,9 @@ public static class Translations
             ["room3_tut5"] = "Per agafar objectes de l'escenari virtual has d'apretar els gatells inferiors dels teus controladors. Posa el controlador dins de l'objecte que vols agafar i presiona els gatells, veuràs que fàcil!",
             ["room3_tut6"] = "Pots agafar objectes a distància si apuntes cap a ells amb el teu controlador i l'agafes amb els gatells inferiors. Has d'apuntar amb la punta mes llunyana a la teva ma del controlador.",
 
-
-
-    
-
+            ["tr_int_1"] = "Benvingut a l'enetrenament del protocol de cas d'incendi! Primer de tot, assegura't d'haver llegit el protocol abans d'intentar l'entrenament per minimitzar els errors. Al teu voltant trobaràs tot el necessàri.",
+            ["tr_int_2"] = "Recorda que pots fer el tutorial abans de l'entrenament per familiartizar-te amb els controls de la simulació. Si no l'has fet ja, pots pressionar el botó menú del teu controlador esquerra i tornar al lobby per iniciar el tutorial.",
+            ["tr_int_3"] = "Cada error compta! Pel que vols fer el mínim d'errors possible. Compta com a error tant entrar en una sala a la que no has d'entrar, com fer un pas del protocol en un ordre incorrecte. Bona sort!",
 
         },
         ["es"] = new Dictionary<string, string>
@@ -73,7 +72,7 @@ public static class Translations
             ["pass_placeholder"] = "Contraseña",
             ["login_button"] = "Entrar",
 
-            //Menu principal 
+            //Menu principal
             ["main_menu_title"] = "Entrenamiento PRL en RV",
             ["tutorial_button"] = "Tutorial",
             ["start_training_button"] = "Entrenamiento",
@@ -102,7 +101,6 @@ public static class Translations
             ["tut_int_3"] = "Primero puedes probar a acercarte con la palanca izquierda y interactuar con los objetos que tienes en la mesa con los gatillos inferiores de tus mandos. Prueba a coger los objetos, girarlos, lanzarlos... Familiarizate con la interacción en Realidad Virtual!",
             ["tut_int_4"] = "Si en algun momento no puedes girar la cámara o moverte con las palancas, probablemente estés apuntando a una caja de texto. ¡Deja de apuntarla y vuelve a probar!",
 
-
             ["room1_intr1"] = "En esta sala podrás aprender cómo se deben colocar los diferentes objetos en sus lugares. Verás que hay objetos opacos y otros transparentes. Puedes interactuar con los que son opacos y los transparentes son los lugares donde los debes colocar.",
             ["room1_intr2"] = "Cuando coloques un objeto dentro de su espacio, deberás comprobar que tu mando vibra. Si es así, significa que el sistema reconoce que lo has colocado correctamente y entonces puedes soltarlo, y verás como el objeto se recoloca solo!",
             ["room2_intr"] = "En esta sala podrás probar a accionar diversos botones y palancas. Estos mecanismos pueden ser accionados pasando la mano como si lo hicieras en la vida real! Prueba a acercar la mano a los botones y palancas y verás como reaccionan!",
@@ -118,12 +116,10 @@ public static class Translations
             ["room3_tut4"] = "Puedes girar la cámara tanto moviendo la cabeza físicamente como accionando la palanca de tu mando derecgo hacia la izquierda y la derecha. Des del menú de opciones puedes hacer que el movimiento con palanca sea por golpecitos para no marearte.",
             ["room3_tut5"] = "Para agarrar objetos del escenario virtual tienes que presionar los gatillos inferiores de tus mandos. Pon el controlador en el objeto que quieres agarrar i presiona el gatillo, ¡verás que fácil!",
             ["room3_tut6"] = "Puedes agarrar objetos a distancia si apuntas hacia ellos con tu mando y presionas el gatillo inferior. Tienes que apuntar con la punta mas lejana de tu mano al mando.",
-            
 
-
-            
-
-
+            ["tr_int_1"] = "¡Bienvenido al entrenamiento del protocolo de caso de incendio! Antes de nada, asegúrate de haber leído el protocolo antes de intentar el entrenamiento para minimizar los errores. A tu alrededor encontrarás todo lo necesario.",
+            ["tr_int_2"] = "Recuerda que puedes hacer el tutorial antes del entrenamiento para familiarizarte con los controles de la simulación. Si aún no lo has hecho, puedes presionar el botón menú de tu mando izquierdo y volver al lobby para iniciar el tutorial.",
+            ["tr_int_3"] = "¡Cada error cuenta! Por lo que quieres cometer el mínimo de errores posible. Cuenta como error tanto entrar en una sala a la que no debes entrar, como realizar un paso del protocolo en un orden incorrecto. ¡Buena suerte!",
 
         },
         ["en"] = new Dictionary<string, string>
@@ -163,14 +159,13 @@ public static class Translations
             ["tut_int_3"] = "First, you can try approaching the table with the left joystick and interacting with the table objects with your controller's bottom triggers. Try grabbing those objects, turning them, throwing them... Get familiar with the Virtual Reality interactions!",
             ["tut_int_4"] = "If you can not move your camera or your own body with your joysticks, you are probably pointing at one of the text boxes. Stop pointing at it and try again!",
 
-
             ["room1_intr1"] = "In this room you will learn how to place the different objects in their spots. You will notice that some objects are opaque and others are transparent. You can interact with the opaque ones and the transparent ones are the spots where you need to place them.",
             ["room1_intr2"] = "When you place an object inside its space, you should check that your controller vibrates. If it does, it means the system recognizes that you have placed it correctly and then you can let it go, and you will see how the object repositions itself!",
             ["room2_intr"] = "In this room you will be able to try operating various buttons and levers. These mechanisms can be activated by passing your hand as if you were doing it in real life! Try bringing your hand close to the buttons and levers and you will see how they react!",
             ["room3_intr"] = "In this room you will be able to review the different controls you can access in this experience. If you have any issues with your controllers or your Virtual Reality headset, contact IT services and they will help you as soon as possible!",
 
             ["room1_tips"] = "Remember, if your controllers are not vibrating, that means you have not placed the piece in the correct position. Keep rotating it inside the transparent zone until you feel the vibration and then you can let it go! You will find this especially useful for the sphere and the cylinder.",
-            
+
             ["room2_button1"] = "You pressed the button!",
             ["room2_lever1"] = "You pulled the lever!",
 
@@ -180,8 +175,10 @@ public static class Translations
             ["room3_tut4"] = "You can turn your camera moving your head and moving your right controller's joystick from left to right. In the options menu you can change the joystick movement to be less smooth so that you don't get sick.",
             ["room3_tut5"] = "To grab objects in the virtual world you must press the bottom triggers in your controller. Put your controller in the object you want to grab and press the trigger, as easy as that!",
             ["room3_tut6"] = "You can grab objects from a distance if you point at them and press the trigger. You must point them with the farest point of the controller to your hand.",
-            
 
+            ["tr_int_1"] = "Welcome to the fire emergency protocol training! First of all, make sure you have read the protocol before attempting the training to minimize mistakes. Around you, you will find everything you need.",
+            ["tr_int_2"] = "Remember that you can do the tutorial before the training to get familiar with the simulation controls. If you haven't done it yet, you can press the menu button on your left controller and return to the lobby to start the tutorial.",
+            ["tr_int_3"] = "Every mistake counts! So you want to make as few errors as possible. Entering a room you should not enter and performing a protocol step in the wrong order both count as errors. Good luck!",
 
         },
     };
