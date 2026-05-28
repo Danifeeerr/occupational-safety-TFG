@@ -1,6 +1,9 @@
 {
     "steps": [
+        "Find the alarm and the extinguisher",
         "Turn on the fire alarm",
-        "Grab the extinguisher"
+        "Grab the extinguisher",
+        "Arrive to the end of the simulation",
+        "Leave the extinguisher at the reunion point"
     ]
 }

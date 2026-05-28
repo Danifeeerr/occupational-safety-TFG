@@ -61,4 +61,10 @@ public class DropZoneController : MonoBehaviour
     {
         OVRInput.SetControllerVibration(0, 0, OVRInput.Controller.Touch);
     }
+
+    public void reactivateDropzone()
+    {
+        _filled = false;
+        foreach (var r in _renderers) r.enabled = true;
+    }
 }

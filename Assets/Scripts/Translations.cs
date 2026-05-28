@@ -63,6 +63,8 @@ public static class Translations
             ["tr_int_2"] = "Recorda que pots fer el tutorial abans de l'entrenament per familiartizar-te amb els controls de la simulació. Si no l'has fet ja, pots pressionar el botó menú del teu controlador esquerra i tornar al lobby per iniciar el tutorial.",
             ["tr_int_3"] = "Cada error compta! Pel que vols fer el mínim d'errors possible. Compta com a error tant entrar en una sala a la que no has d'entrar, com fer un pas del protocol en un ordre incorrecte. Bona sort!",
 
+            ["error_room"] = "Amb compte! Has avistat indicis d'un incendi, no hauries d'estar dondant voltes per l'oficina! T'has d'afanyar a seguir el protocol per poder avisar a tothom i posar-te a tu mateix fora de perill. Per sortir d'aquí, només has de seguir els cartells, veuràs com en res estàs fora!",
+
         },
         ["es"] = new Dictionary<string, string>
         {
@@ -120,6 +122,8 @@ public static class Translations
             ["tr_int_1"] = "¡Bienvenido al entrenamiento del protocolo de caso de incendio! Antes de nada, asegúrate de haber leído el protocolo antes de intentar el entrenamiento para minimizar los errores. A tu alrededor encontrarás todo lo necesario.",
             ["tr_int_2"] = "Recuerda que puedes hacer el tutorial antes del entrenamiento para familiarizarte con los controles de la simulación. Si aún no lo has hecho, puedes presionar el botón menú de tu mando izquierdo y volver al lobby para iniciar el tutorial.",
             ["tr_int_3"] = "¡Cada error cuenta! Por lo que quieres cometer el mínimo de errores posible. Cuenta como error tanto entrar en una sala a la que no debes entrar, como realizar un paso del protocolo en un orden incorrecto. ¡Buena suerte!",
+
+            ["error_room"] = "¡Cuidado! Has visto indicios de un incendio, ¡no deberías estar dando vueltas por la oficina! Tienes que darte prisa en seguir el protocolo para poder avisar a todos y ponerte a ti mismo fuera de peligro. Para salir de aquí solo tienes que seguir los carteles, ¡verás como en nada estás fuera!",
 
         },
         ["en"] = new Dictionary<string, string>
@@ -179,6 +183,8 @@ public static class Translations
             ["tr_int_1"] = "Welcome to the fire emergency protocol training! First of all, make sure you have read the protocol before attempting the training to minimize mistakes. Around you, you will find everything you need.",
             ["tr_int_2"] = "Remember that you can do the tutorial before the training to get familiar with the simulation controls. If you haven't done it yet, you can press the menu button on your left controller and return to the lobby to start the tutorial.",
             ["tr_int_3"] = "Every mistake counts! So you want to make as few errors as possible. Entering a room you should not enter and performing a protocol step in the wrong order both count as errors. Good luck!",
+
+            ["error_room"] = "Watch out! You have spotted signs of a fire, you should not be wandering around the office! You need to hurry up and follow the protocol to warn everyone and get yourself out of danger. To get out of here, just follow the signs, you'll be out in no time!",
 
         },
     };

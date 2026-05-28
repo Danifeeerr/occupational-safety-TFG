@@ -79,6 +79,7 @@
   <Project Path="Meta.XR.Audio.csproj" />
   <Project Path="MetaXRSimulatorCore.Editor.csproj" />
   <Project Path="Meta.XR.MultiplayerBlocks.Shared.Editor.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Unity.InputSystem.ForUI.csproj" />
   <Project Path="Meta.XR.Editor.RemoteContent.csproj" />
   <Project Path="Unity.AI.Navigation.csproj" />
@@ -106,7 +107,6 @@
   <Project Path="Meta.XR.BuildingBlocks.DepthAPI.csproj" />
   <Project Path="Unity.VisualScripting.Shared.Editor.csproj" />
   <Project Path="Meta.WitAi.TTS.Editor.csproj" />
-  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Oculus.Platform.Editor.csproj" />
   <Project Path="Meta.XR.EnvironmentDepth.Editor.csproj" />
   <Project Path="Oculus.Interaction.Samples.Editor.UISet.csproj" />
