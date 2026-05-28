@@ -4,6 +4,8 @@ using System.Collections;
 public class LeverController : MonoBehaviour
 {
     public UnityEngine.Events.UnityEvent onLeverPulled;
+    public UnityEngine.Events.UnityEvent<string> leverStepCheck;
+    [SerializeField] private string myStep;
     private bool _isPulled = false;
     public bool rotateX;
     [SerializeField] private float rotationDuration = 0.3f;
@@ -13,11 +15,18 @@ public class LeverController : MonoBehaviour
     {
         if (_isPulled) return;
         if (!HasTagInParents(other.transform, "hand")) return;
-        _isPulled = true;
-        Vector3 targetRotation = rotateX ? new Vector3(-rotationDegrees, 0f, 0f) : new Vector3(0f, 0f, -rotationDegrees);
-        StartCoroutine(RotateLever(targetRotation));
+        leverStepCheck.Invoke(myStep);
     }
 
+    public void correctStep(string step)
+    {
+        if (step == myStep)
+        {
+            _isPulled = true;
+            Vector3 targetRotation = rotateX ? new Vector3(-rotationDegrees, 0f, 0f) : new Vector3(0f, 0f, -rotationDegrees);
+            StartCoroutine(RotateLever(targetRotation));
+        }
+    }
     private IEnumerator RotateLever(Vector3 deltaRotation)
     {
         Quaternion startRot = transform.localRotation;

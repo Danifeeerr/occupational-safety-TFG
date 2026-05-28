@@ -1989,7 +1989,7 @@ GameObject:
   - component: {fileID: 96132975}
   - component: {fileID: 96132974}
   - component: {fileID: 96132973}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: '[BuildingBlock] HandGrabInstallationRoutine'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2741,7 +2741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc704340450462a46a43095643c10418, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.711
+      value: -9.69
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc704340450462a46a43095643c10418, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2771,6 +2771,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6733177361254619370, guid: cc704340450462a46a43095643c10418, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -4718040791104185828, guid: cc704340450462a46a43095643c10418, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -2783,9 +2787,17 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d02bcb0537168b8439e2914170f4e472, type: 2}
+    - target: {fileID: -516098083770646512, guid: cc704340450462a46a43095643c10418, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cc704340450462a46a43095643c10418, type: 3}
       propertyPath: m_Name
       value: Extinguisher
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cc704340450462a46a43095643c10418, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1129496810705857465, guid: cc704340450462a46a43095643c10418, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -2795,6 +2807,18 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 777f61f06baaa234a95c24f3a8fecb47, type: 2}
+    - target: {fileID: 3849762623622064168, guid: cc704340450462a46a43095643c10418, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512510688612296998, guid: cc704340450462a46a43095643c10418, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919683763462532184, guid: cc704340450462a46a43095643c10418, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7071182760956848314, guid: cc704340450462a46a43095643c10418, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -2803,6 +2827,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d8b21a3e8e5aaf24aa27d93ea5042976, type: 2}
+    - target: {fileID: 8513859187771203891, guid: cc704340450462a46a43095643c10418, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700725330082129686, guid: cc704340450462a46a43095643c10418, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -5546747315237514756, guid: cc704340450462a46a43095643c10418, type: 3}
@@ -4238,6 +4270,78 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4471087690841739454, guid: c184ee61f59bf7a45832f4bd6fe6d54c, type: 3}
   m_PrefabInstance: {fileID: 176967499}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &176988254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 176988255}
+  - component: {fileID: 176988256}
+  m_Layer: 0
+  m_Name: ProtocolController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &176988255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176988254}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &176988256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176988254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18544736a24bf65499b1d54f6579c10f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProtocolController
+  jsonFile: {fileID: 4900000, guid: 83acab76f4d697d4a876c3081d253c62, type: 3}
+  stepDone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1416219622}
+        m_TargetAssemblyTypeName: LeverController, Assembly-CSharp
+        m_MethodName: correctStep
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1774010101}
+        m_TargetAssemblyTypeName: ExtinguisherBoxController, Assembly-CSharp
+        m_MethodName: checkStep
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &180281189
 GameObject:
   m_ObjectHideFlags: 0
@@ -38047,6 +38151,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 318837983669305198, guid: 381737bc754fd894488947bc0d189440, type: 3}
   m_PrefabInstance: {fileID: 6853127745479786196}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1416219622 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+  m_PrefabInstance: {fileID: 6853127745479786196}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140e843aae603b0419317151d0664b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LeverController
 --- !u!1001 &1418431238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42796,6 +42911,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e24674be8cef6214ab93979279d004d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonController
+  onButtonPressed:
+    m_PersistentCalls:
+      m_Calls: []
+  pressDepth: 0.02
+  pressSpeed: 0.08
 --- !u!114 &1580873008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48671,6 +48791,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1774010100}
+  - component: {fileID: 1774010102}
+  - component: {fileID: 1774010101}
   m_Layer: 0
   m_Name: ExtinguisherBox
   m_TagString: Untagged
@@ -48698,6 +48820,56 @@ Transform:
   - {fileID: 485804756}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1774010101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774010099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d97c573086f834ebe6a157ab7f3582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExtinguisherBoxController
+  myStep: Grab the extinguisher
+  extinguisher: {fileID: 124622850}
+  extinguisherGrabbed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 176988256}
+        m_TargetAssemblyTypeName: ProtocolController, Assembly-CSharp
+        m_MethodName: ReceiveStep
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Grab the extinguisher
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &1774010102
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774010099}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.20884672, y: 0.31179896, z: 0.057881434}
+  m_Center: {x: -0.05442331, y: 0.037572384, z: -0.023940716}
 --- !u!1 &1782670085
 GameObject:
   m_ObjectHideFlags: 0
@@ -50461,7 +50633,7 @@ GameObject:
   - component: {fileID: 1840384941}
   - component: {fileID: 1840384940}
   - component: {fileID: 1840384939}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: '[BuildingBlock] DistanceHandGrabInstallationRoutine'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55511,7 +55683,7 @@ Transform:
   m_GameObject: {fileID: 2056091906}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -24.313}
+  m_LocalPosition: {x: -1.423, y: 1, z: -13.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -58602,6 +58774,70 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: myStep
+      value: Turn on the fire alarm
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: onLeverPulled.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: leverStepCheck.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: onLeverPulled.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: leverStepCheck.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: onLeverPulled.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 176988256}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: leverStepCheck.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 176988256}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: leverStepCheck.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: onLeverPulled.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReceiveStep
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: leverStepCheck.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReceiveStep
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: onLeverPulled.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ProtocolController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: leverStepCheck.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ProtocolController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: onLeverPulled.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: leverStepCheck.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Turn on the fire alarm
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: onLeverPulled.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399743008875814852, guid: 381737bc754fd894488947bc0d189440, type: 3}
+      propertyPath: leverStepCheck.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58611,6 +58847,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 176988255}
   - {fileID: 832575519}
   - {fileID: 330585546}
   - {fileID: 1454605068}
