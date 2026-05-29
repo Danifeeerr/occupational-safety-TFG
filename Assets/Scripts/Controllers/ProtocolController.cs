@@ -21,20 +21,20 @@ public class ProtocolController : MonoBehaviour
 
 
     private int mistakeCounter;
-    private float _elapsed;
+    private float _trainingTime;
 
     private void Start()
     {
         _steps = JObject.Parse(jsonFile.text)["steps"].ToObject<string[]>();
         mistakeCounter = 0;
         _pointer = 0;
-        _elapsed = 0f;
+        _trainingTime = 0f;
     }
 
     private void Update()
     {
         if (_pointer < _steps.Length)
-            _elapsed += Time.deltaTime;
+            _trainingTime += Time.deltaTime;
     }
 
     public void ReceiveStep(string step)
@@ -54,7 +54,7 @@ public class ProtocolController : MonoBehaviour
             if (_pointer >= _steps.Length)
             {
                 finishedProtocol.Invoke();
-                ApiController.Instance.registerTry(mistakeCounter, trainingId, _elapsed);
+                ApiController.Instance.registerTry(mistakeCounter, trainingId, _trainingTime);
             }
             stepDone.Invoke(step);
             AudioController.Instance.PlaySFX(correctSound);
