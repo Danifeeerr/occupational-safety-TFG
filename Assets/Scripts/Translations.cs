@@ -37,6 +37,7 @@ public static class Translations
             ["next_card"] = "Seguent",
             ["prevoius_card"] = "Enrere",
             ["close_card"] = "Tancar",
+            ["retry_button"] = "Reintentar",
             ///TutorialIntroduction///
             ["tut_int_1"] = "Benvingut al tutorial del sistema d'entrenament per PRL! En aquesta sala podras trobar diverses formes d'aprendre a utilitzar els controls en Realitat Virtual com agafar objectes, accionar botons i palanques o colocar objectes així com moure't!",
             ["tut_int_2"] = "Davant teu hi han tres sales amb un contingut diferent cadascuna. A la sala número 1 aprendràs a accioanr palanques i botons, a la 2 a col·locar objectes i a la 3 podràs repasar els controls tant de moviment com d'interacció.",
@@ -65,6 +66,7 @@ public static class Translations
 
             ["error_room"] = "Amb compte! Has avistat indicis d'un incendi, no hauries d'estar dondant voltes per l'oficina! T'has d'afanyar a seguir el protocol per poder avisar a tothom i posar-te a tu mateix fora de perill. Per sortir d'aquí, només has de seguir els cartells, veuràs com en res estàs fora!",
 
+            ["finishing_text"] = "Felicitats! Has completat l'entrenament amb éxit! Ara pots tornar a realitzar l'entrenament o tornar al lobby per tancar la sessió si has acabat amb la simulació. Moltes gràcies per participar!",
         },
         ["es"] = new Dictionary<string, string>
         {
@@ -97,6 +99,8 @@ public static class Translations
             ["next_card"] = "Siguiente",
             ["prevoius_card"] = "Atrás",
             ["close_card"] = "Cerrar",
+            ["retry_button"] = "Reintentar",
+
             ///TutorialIntroduction///
             ["tut_int_1"] = "Bienvenido al tutorial del sistema de entrenamiento para PRL! En esta sala podras encontrar varias formas de aprender a utilizar los controles en Realidad Virtual como coger objectos, accionar botones y palancas o colocar objetos así como moverte!",
             ["tut_int_2"] = "Delante de ti hay tres salas con un contenido diferente cada una. En la sala 1 aprenderás a accionar palancas y botones, en la 2 a colocar objetos y en la 3 podrás repasar los controles tanto de movimiento como de interacción.",
@@ -124,6 +128,8 @@ public static class Translations
             ["tr_int_3"] = "¡Cada error cuenta! Por lo que quieres cometer el mínimo de errores posible. Cuenta como error tanto entrar en una sala a la que no debes entrar, como realizar un paso del protocolo en un orden incorrecto. ¡Buena suerte!",
 
             ["error_room"] = "¡Cuidado! Has visto indicios de un incendio, ¡no deberías estar dando vueltas por la oficina! Tienes que darte prisa en seguir el protocolo para poder avisar a todos y ponerte a ti mismo fuera de peligro. Para salir de aquí solo tienes que seguir los carteles, ¡verás como en nada estás fuera!",
+
+            ["finishing_text"] = "¡Felicidades! ¡Has completado el entrenamiento con éxito! Ahora puedes volver a realizar el entrenamiento o volver al lobby para cerrar la sesión si has terminado con la simulación. ¡Muchas gracias por participar!",
 
         },
         ["en"] = new Dictionary<string, string>
@@ -157,6 +163,8 @@ public static class Translations
             ["next_card"] = "Next",
             ["prevoius_card"] = "Back",
             ["close_card"] = "Close",
+            ["retry_button"] = "Retry",
+
             ///TutorialIntroduction///
             ["tut_int_1"] = "Welcome to the OHS training system tutorial! Here you can find some ways of learning how to use your Virtual Reality Controls for grabbing objects, pressing buttons and operating levers or placing objects as well as moving around!",
             ["tut_int_2"] = "In front of you, you will find three rooms with different contents. In the room number 1 you will learn to operate buttons and levers, in the 2nd you will learn to place objects and in the 3rd one you can review movement and interaction controls.",
@@ -185,6 +193,8 @@ public static class Translations
             ["tr_int_3"] = "Every mistake counts! So you want to make as few errors as possible. Entering a room you should not enter and performing a protocol step in the wrong order both count as errors. Good luck!",
 
             ["error_room"] = "Watch out! You have spotted signs of a fire, you should not be wandering around the office! You need to hurry up and follow the protocol to warn everyone and get yourself out of danger. To get out of here, just follow the signs, you'll be out in no time!",
+
+            ["finishing_text"] = "Congratulations! You have successfully completed the training! You can now redo the training or return to the lobby to log out if you are done with the simulation. Thank you very much for participating!",
 
         },
     };

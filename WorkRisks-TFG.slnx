@@ -4,6 +4,7 @@
   <Project Path="Meta.XR.MultiplayerBlocks.Shared.csproj" />
   <Project Path="Unity.PlasticSCM.Editor.csproj" />
   <Project Path="Meta.WitAi.Lib.csproj" />
+  <Project Path="Unity.ProBuilder.csproj" />
   <Project Path="Meta.XR.BuildingBlocks.csproj" />
   <Project Path="Meta.WitAi.csproj" />
   <Project Path="Unity.Timeline.Editor.csproj" />
@@ -11,6 +12,7 @@
   <Project Path="Unity.Mathematics.csproj" />
   <Project Path="Unity.Collections.csproj" />
   <Project Path="Meta.Voice.VSDKHub.Editor.csproj" />
+  <Project Path="Unity.ProBuilder.Poly2Tri.csproj" />
   <Project Path="Oculus.Platform.csproj" />
   <Project Path="Unity.VisualScripting.Core.Editor.csproj" />
   <Project Path="Meta.WitAI.Lib.Editor.csproj" />
@@ -22,6 +24,7 @@
   <Project Path="Unity.Burst.csproj" />
   <Project Path="Oculus.VR.Editor.csproj" />
   <Project Path="Unity.VisualScripting.Flow.Editor.csproj" />
+  <Project Path="Unity.ProBuilder.Csg.csproj" />
   <Project Path="Oculus.VR.Scripts.Editor.csproj" />
   <Project Path="Unity.VisualStudio.Editor.csproj" />
   <Project Path="Unity.InputSystem.csproj" />
@@ -33,6 +36,7 @@
   <Project Path="Unity.Searcher.Editor.csproj" />
   <Project Path="meta.xr.mrutilitykit.csproj" />
   <Project Path="Oculus.Interaction.Samples.csproj" />
+  <Project Path="Unity.ProBuilder.Editor.csproj" />
   <Project Path="Meta.WitAi.TTS.csproj" />
   <Project Path="Unity.VisualScripting.Core.csproj" />
   <Project Path="Meta.Wit.Composer.csproj" />
@@ -73,7 +77,9 @@
   <Project Path="Unity.XR.OpenXR.Editor.csproj" />
   <Project Path="Meta.Wit.Composer.Editor.csproj" />
   <Project Path="Oculus.Interaction.UnityXR.csproj" />
+  <Project Path="Unity.ProBuilder.KdTree.csproj" />
   <Project Path="Unity.XR.Management.Editor.csproj" />
+  <Project Path="Unity.ProBuilder.AddOns.Editor.csproj" />
   <Project Path="Meta.XR.Editor.Notifications.csproj" />
   <Project Path="Unity.XR.OpenXR.Features.MetaQuestSupport.Editor.csproj" />
   <Project Path="Meta.XR.Audio.csproj" />
@@ -99,8 +105,10 @@
   <Project Path="Meta.Voice.Hub.Editor.csproj" />
   <Project Path="Oculus.Haptics.Editor.csproj" />
   <Project Path="Meta.VoiceSDK.Mic.Common.csproj" />
+  <Project Path="Unity.ProBuilder.AssetIdRemapUtility.csproj" />
   <Project Path="Meta.XR.Editor.Id.csproj" />
   <Project Path="AssistantCoreSDKEditor.csproj" />
+  <Project Path="Unity.Settings.Editor.csproj" />
   <Project Path="VoiceSDK.Editor.Composer.csproj" />
   <Project Path="Unity.InputSystem.TestFramework.csproj" />
   <Project Path="UnityEditor.XR.LegacyInputHelpers.csproj" />
@@ -130,6 +138,7 @@
   <Project Path="Meta.XR.Editor.StatusMenu.csproj" />
   <Project Path="Meta.XR.Editor.ToolingSupport.RuntimeOptimizer.csproj" />
   <Project Path="Unity.InputSystem.DocCodeSamples.csproj" />
+  <Project Path="Unity.ProBuilder.Stl.csproj" />
   <Project Path="Meta.XR.Editor.EditorCoroutine.csproj" />
   <Project Path="Meta.Net.endel.nativewebsocket.csproj" />
   <Project Path="Unity.VisualScripting.DocCodeExamples.csproj" />

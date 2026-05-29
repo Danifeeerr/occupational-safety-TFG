@@ -1,5 +1,6 @@
 using UnityEngine;
 using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
 
 public class ProtocolController : MonoBehaviour
 {
@@ -11,18 +12,29 @@ public class ProtocolController : MonoBehaviour
     public UnityEngine.Events.UnityEvent<string> incorrectStep;
     public UnityEngine.Events.UnityEvent finishedProtocol;
 
+    public int trainingId;
+
     public AudioClip errorSound;
     public AudioClip correctSound;
 
+    [SerializeField] private List<GameObject> _indicators;
+
 
     private int mistakeCounter;
-
+    private float _elapsed;
 
     private void Start()
     {
         _steps = JObject.Parse(jsonFile.text)["steps"].ToObject<string[]>();
         mistakeCounter = 0;
         _pointer = 0;
+        _elapsed = 0f;
+    }
+
+    private void Update()
+    {
+        if (_pointer < _steps.Length)
+            _elapsed += Time.deltaTime;
     }
 
     public void ReceiveStep(string step)
@@ -36,10 +48,13 @@ public class ProtocolController : MonoBehaviour
         if (_steps[_pointer] == step)
         {
             Debug.Log("Correct step");
+            if (_indicators[_pointer] != null) _indicators[_pointer].SetActive(false);
             _pointer++;
+            if (_pointer < _indicators.Count && _indicators[_pointer] != null) _indicators[_pointer].SetActive(true);
             if (_pointer >= _steps.Length)
             {
                 finishedProtocol.Invoke();
+                ApiController.Instance.registerTry(mistakeCounter, trainingId, _elapsed);
             }
             stepDone.Invoke(step);
             AudioController.Instance.PlaySFX(correctSound);
