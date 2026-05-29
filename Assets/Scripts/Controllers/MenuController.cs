@@ -29,10 +29,8 @@ public class MenuController : MonoBehaviour
     public void login()
     {
         StartCoroutine(ApiController.Instance.Login(
-            //inputUsername.text,
-            //inputPassword.text,
-            "admin",
-            "admin",
+            inputUsername.text,
+            inputPassword.text,
             success =>
             {
                 if (success)
