@@ -11,11 +11,18 @@ public class LeverController : MonoBehaviour
     [SerializeField] private float rotationDuration = 0.3f;
     [SerializeField] private float rotationDegrees = 90f;
 
+    public bool tutorial = false;
+
     private void OnTriggerEnter(Collider other)
     {
         if (_isPulled) return;
         if (!HasTagInParents(other.transform, "hand")) return;
         leverStepCheck.Invoke(myStep);
+        if (tutorial)
+        {
+            Vector3 targetRotation = rotateX ? new Vector3(-rotationDegrees, 0f, 0f) : new Vector3(0f, 0f, -rotationDegrees);
+            StartCoroutine(RotateLever(targetRotation));
+        }
     }
 
     public void correctStep(string step)
